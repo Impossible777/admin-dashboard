@@ -6,16 +6,77 @@ body {
 }
 .container {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 100px 50px 4fr 50px;
+    grid-template-columns: 300px 2fr 1fr;
+    grid-template-rows: 150px 50px 4fr 50px;
     height: 100vh;
 
 
 }
 .header {
     grid-column: 2/4;
+    grid-row: 1/3;
+    background-color: #e8e8e8;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.search-bar {
     grid-row: 1/2;
-    background-color: pink
+}
+.welcome {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 80px 300px;
+    gap: 20px;
+}
+h3 {
+    margin-top: 5px;
+}
+.buttons {
+    grid-row: 2/3;
+}
+
+.account {
+   display: grid;
+   grid-template-columns: 40px 60px 100px;
+   grid-template-rows: 40px;
+   margin-top: 20px;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+   
+}
+.bell {
+    height: 30px;
+}
+.search-bar,
+.welcome {
+    margin-left: 30px;
+}
+.search-bar {
+    display: grid;
+    grid-template-columns: 40px 200px;
+    margin-top: 20px;
+}
+.bar {
+    width: 600px;
+    height: 20px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+.search {
+    height: 20px;
+}
+.welcome-text {
+    align-self: center;
+}
+.profile-1 {
+    height: 80px;
+
+}
+.profile {
+    height: 50px;
 }
 .sidebar {
     grid-row: 1/5;
@@ -27,7 +88,7 @@ body {
 
 .main-content {
     grid-column: 2/4;
-    grid-row: 2/5;
+    grid-row: 3/5;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 10px;
@@ -91,6 +152,24 @@ body {
 
 .help-links {
     font-size: 20px;
+}
+
+
+.buttons {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    border-style: none;
+    height: 40px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
 }
 
 
